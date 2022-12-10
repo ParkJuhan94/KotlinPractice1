@@ -78,3 +78,41 @@ fun checkNum(score : Int) {
         else -> println("okay")
     }
 }
+
+//
+/*
+[Expression vs Statement]
+
+Expression 은 뭔가를 return 하는 것.
+Statement 는 return 하는게 없는 것.
+
+코틀린의 모든 함수는 Expression 이다.
+왜냐하면 코틀린의 함수는 최소 Unit 이라도 return 하니깐.
+
+자바의 void func()는 Staement 이다.
+*/
+
+/*
+5. Array and List
+Array
+
+List : Immutable List
+       Mutable List
+ */
+fun array() {
+    val array = arrayOf(1,2,3)
+    val list  = listOf(1,2,3)
+
+    val array2 = arrayOf(1, "d", 3.4f)
+    val list2  = listOf(1, "d", 3.4f)
+
+    array[0] = 3
+    //list[0] = 2   //immutable 이라서 원소 변경 불가능. interface 라서 get 은 가능 & set 불가능
+    var result = list.get(0)
+
+    var arrayList = arrayListOf<Int>()
+    arrayList.add(10)
+    arrayList.add(20)
+    arrayList[0] = 20
+    
+}
