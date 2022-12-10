@@ -114,5 +114,11 @@ fun array() {
     arrayList.add(10)
     arrayList.add(20)
     arrayList[0] = 20
-    
+
+}
+
+// 6. For / While
+
+for forAndWhile() {
+
 }
